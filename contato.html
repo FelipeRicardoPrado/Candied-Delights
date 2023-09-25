@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candied Delights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Modelo-2.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header id="topo">
+        <!--Logo-->
+        <a href="index.html"><img src="img/Modelo-1.png" alt="Logo" class="logo"></a>
+
+        <!--Link-->
+        <div id="eng">
+            <a href="index.html" class="links">Início</a>
+            <a href="sobre.html" class="links">Sobre</a>
+            <a href="produtos.html" class="links">Produtos</a>
+            <a href="contato.html" class="links"><b>Contato</b></a>
+        </div>
+    </header>
+
+    <div style="background-color: #e4e9eb;display: flex;align-items: center;" class="caixa">
+        <h2 style="font-size: 5vh;font-weight: normal;margin-left: 2vw;">Contato</h2>
+    </div>
+    <div style="background-color: #778da9;" class="caixa">
+        <p class="texto">A empresa busca garantir a
+            <b>satisfação dos clientes</b>, atendendo às suas expectativas
+            quanto à qualidade, variedade e atendimento ao cliente.
+            Comentários positivos e recomendações ajudarão a
+            construir uma base de clientes leais.<br><br><b>Endereço</b>: Arapongas, Av.XXXXX, Rua XXXXXX,
+            9999<br><b>Número</b>: (43) 999999999<br><b>Email</b>: Candied Delights@gmail.com
+        </p>
+    </div>
+    <div id="card" style="width: 80%;flex-flow: column;">
+        <h2 style="font-size: 5vh;font-weight: normal;padding: 5vh;">Redes Sociais</h2>
+        <div
+            style="display: flex;align-items: center;justify-content: space-around;flex-flow: wrap row;width: 100%;padding: 1vh;">
+
+            <div class="card2" style="cursor: pointer;justify-content: center;">
+                <img src="img/instagram.png" alt="Instagram" class="simbolo">
+                <h3 style="font-size: 2vh;font-weight: normal;padding: 5vh;">Instagram</h3>
+            </div>
+
+            <div class="card2" style="cursor: pointer;justify-content: center;">
+                <img src="img/facebook.png" alt="Facebook" class="simbolo">
+                <h3 style="font-size: 2vh;font-weight: normal;padding: 5vh;">Facebook</h3>
+            </div>
+
+            <div class="card2" style="cursor: pointer;justify-content: center;">
+                <img src="img/twitter.png" alt="Twitter" class="simbolo">
+                <h3 style="font-size: 2vh;font-weight: normal;padding: 5vh;">Twitter</h3>
+            </div>
+        </div>
+    </div>
+    <div class="caixa" id="for2">
+        <h3 style="
+        font-size: 5vh;
+        font-weight: normal;
+        margin-left: 2vw;
+        ">Formulário de contato</h3>
+        <p>- O Formulário de contato permite que os clientes enviem perguntas ou consultas diretamente para a empresa.
+        </p>
+        <div id="for">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="email" id="formulario" placeholder="Email">
+        </div>
+        <input type="text" id="opiniao" placeholder="Digite Aqui...">
+        <div id="enviar" onclick="concluido()">Enviar formulario</div>
+    </div>
+
+    <!--Rodapé-->
+    <footer id="rodape">
+        <a href="index.html"><img src="img/Modelo-1.png" alt="Logo" class="logo"
+                style="width: 10vh;margin-left: 0;"></a>
+        <div class="inf">
+            <p class="tit"><b>Início</b></p>
+            <a href="index.html" class="dir">Home</a>
+        </div>
+        <div class="inf">
+            <p class="tit"><b>Sobre-nós</b></p>
+            <a href="sobre.html" class="dir">Informações da empresa</a>
+            <a href="contato.html" class="dir">Contato</a>
+            <a href="#" class="dir">Blog</a>
+        </div>
+        <div class="inf">
+            <p class="tit"><b>Suport</b></p>
+            <a href="#" class="dir">Telefones</a>
+            <a href="#" class="dir">Instagram</a>
+            <a href="#" class="dir">Facebook</a>
+            <a href="#" class="dir">Twitter</a>
+        </div>
+        <div class="inf">
+            <p class="tit"><b>Informações</b></p>
+            <p>A
+                empresa busca proporcionar uma experiência
+                gastronômica única e prazerosa para seus clientes.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

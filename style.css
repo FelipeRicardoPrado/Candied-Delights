@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f6f7;
+    font-family: 'Poppins', sans-serif;
+    flex-flow: column;
+}
+
+/*Configurações de estilização geral do site estão acima*/
+
+body,
+#topo,
+#card,
+.card2,
+.caixa,
+.bloco,
+#confleft,
+#confright {
+    display: flex;
+    align-items: center;
+}
+
+#topo {
+    background: rgba(22, 41, 58, 0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 10vh;
+}
+
+.logo {
+    width: 8vh;
+    margin-left: 2vh;
+}
+
+#eng {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1vw;
+}
+
+.links {
+    margin-left: 1vw;
+    padding: 2vh;
+    line-height: 2vh;
+    color: #e4e9eb;
+    transition: .2s ease-in-out;
+}
+
+.links:hover {
+    background: rgb(0, 0, 0, .1);
+    transform: scale(1.05);
+    box-shadow: rgb(0, 0, 0, .4) 1px 2px 4px;
+    transition: .2s ease-in-out;
+}
+
+#rodape {
+    background: rgba(22, 41, 58, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 3vh 0 5vh 0;
+}
+
+.inf {
+    display: flex;
+    width: 20rem;
+    flex-flow: column;
+    line-height: 160%;
+}
+
+#card {
+    width: 75%;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    margin-top: 2vh;
+}
+
+.card2 {
+    flex-flow: column;
+    width: 25rem;
+    height: 50vh;
+    background: rgba(28, 35, 40, 0.65);
+    backdrop-filter: blur(7px);
+    padding: 3vh;
+    text-align: justify;
+    transition: .4s ease-in-out;
+    margin: 1vh;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    transition: .47s ease-in-out;
+    box-shadow: rgb(0, 0, 0, .6) 1px 2px 4px;
+    filter: brightness(.9);
+}
+
+#amb {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 2vh 0 2vh 0;
+}
+
+.amb2 {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    background: rgba(89, 121, 148, 0.7);
+    transition: .35s ease-in-out;
+}
+
+.amb2:hover {
+    box-shadow: rgb(0, 0, 0, .5) 1px 3px 5px;
+    transition: .35s ease-in-out;
+}
+
+#amb:has(.amb2:hover) .amb2:not(:hover) {
+    filter: saturate(0);
+    transform: scale(0.98);
+    transition: .35s ease-in-out;
+}
+
+.texto {
+    width: 40vw;
+    line-height: 3.5vh;
+    text-align: justify;
+}
+
+.caixa {
+    padding: 5vh;
+    width: 100%;
+    height: 60vh;
+}
+
+.dir {
+    width: max-content;
+}
+
+.bloco {
+    height: 40vh;
+    justify-content: space-between;
+}
+
+.bloco2 {
+    padding: 7vh;
+}
+
+#formulario,
+#opiniao,
+#nome {
+    width: 50%;
+    height: 4vh;
+    padding: 1vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+#opiniao {
+    height: 15vh;
+}
+
+.simbolo {
+    width: 5vh;
+}
+
+#enviar,
+#voltar,
+#compra,
+#valor {
+    border: 1px solid #173145;
+    padding: 1vh;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+#enviar {
+    transition: .2s ease-out;
+}
+
+#enviar:hover,
+#voltar:hover {
+    background-color: #173145;
+    color: #e4e9eb;
+    transition: .2s ease-out;
+}
+
+#conf {
+    background: #e4e9eb;
+    width: 60%;
+    height: 70vh;
+    position: fixed;
+    top: 20vh;
+    display: none;
+    box-shadow: rgba(11, 23, 33, 0.5) 1px 3px 5px;
+    box-shadow: rgb(0, 0, 0, .4) 1px 2px 4px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+
+#confleft,
+#confright {
+    height: 100%;
+    justify-content: center;
+    flex-flow: column;
+    padding: 5vh;
+}
+
+#confleft {
+    width: 60%;
+    background: #d0d4d6;
+}
+
+#confright {
+    width: 40%;
+}
+
+#voltar {
+    width: 100%;
+    margin-top: 2vh;
+    text-align: center;
+    transition: .2s ease-out;
+}
+
+#compra {
+    width: 100%;
+    text-align: center;
+    background: #38678b;
+    border: none;
+    color: #e4e9eb;
+    margin-top: 1vh;
+    transition: .2s ease-out;
+}
+
+#compra:hover {
+    background: #2c526e;
+    transition: .2s ease-out;
+}
+
+#valor {
+    cursor: auto;
+    width: 100%;
+}
+
+.numero {
+    border: 1px solid #173145;
+    padding: 1vh;
+    border-radius: .2rem;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-size: 1.9vh;
+    width: 70%;
+}
+
+#ap {
+    background: url(img/Apresentação.png);
+    height: 100%;
+    width: 42%;
+    background-size: cover;
+}
+
+.imgbl {
+    width: 43.5vw;
+    height: 100%;
+}
+
+#pr {
+    height: 215vh;
+    background-color: #e4e9eb;
+    margin-top: 2vh;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+#for {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+#for2 {
+    background-color: #e4e9eb;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 2vh;
+    justify-content: space-between;
+}
+
+#imgcx {
+    justify-content: space-between;
+}
+
+@media (max-width:780px) {
+    .texto {
+        width: 100%;
+    }
+
+    .amb2 {
+        width: 100%;
+    }
+
+    .bloco {
+        flex-flow: wrap;
+        height: auto;
+    }
+
+    .imgbl {
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    #pr {
+        height: auto;
+    }
+
+    .bloco2 {
+        margin-top: 10vh;
+        padding: 0;
+        width: 100%;
+    }
+
+    .inf {
+        margin-top: 2vh;
+        align-items: center;
+    }
+
+    #formulario,
+    #opiniao,
+    #nome {
+        width: 100%;
+    }
+
+    #for2 {
+        height: auto;
+    }
+
+    #enviar {
+        margin-top: 2vh;
+    }
+
+    #conf {
+        width: 95%;
+        flex-flow: column;
+        top: 10vh;
+        height: 95vh;
+    }
+
+    #confleft,
+    #confright {
+        width: 100%;
+        justify-content: center;
+        flex-flow: column;
+        padding: 1.5vh;
+    }
+
+    #confleft {
+        height: 43vh;
+        background: #d0d4d6;
+    }
+
+    #confright {
+        height: 56vh;
+    }
+
+    #imgcx {
+        flex-flow: column;
+    }
+
+    #ap {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+}
