@@ -1,8 +1,11 @@
+/*Contato-Formulário de contato*/
 var enviar = document.getElementById('enviar')
 function concluido() {
     alert('Seu formulário foi enviado con sucesso')
     enviar.style.display = 'none'
 }
+
+/*Produtos-Sabores*/
 var conf, valor, numero, compra, title, text;
 conf = document.getElementById('conf')
 

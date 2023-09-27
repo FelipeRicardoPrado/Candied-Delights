@@ -17,8 +17,7 @@ body {
     flex-flow: column;
 }
 
-/*Configurações de estilização geral do site estão acima*/
-
+/*Display-AlinC*/
 body,
 #topo,
 #card,
@@ -26,16 +25,44 @@ body,
 .caixa,
 .bloco,
 #confleft,
-#confright {
+#confright,
+#eng,
+.amb2,
+#for,
+#for2 {
     display: flex;
     align-items: center;
 }
 
-#topo {
-    background: rgba(22, 41, 58, 0.7);
+/*Ff-Col*/
+#for2,
+#for2,
+#for,
+#pr,
+#confleft,
+#confright,
+.card2,
+.inf {
+    flex-flow: column;
+}
+
+:root {
+    --cor1: #e4e9eb;
+    --cor2: #16293ab3;
+    --cor3: #1c232899;
+}
+
+/*Configurações de estilização geral do site estão acima*/
+/*Rodapé e Cabeçalho*/
+#topo,
+#rodape {
+    background: var(--cor2);
     backdrop-filter: blur(10px);
-    position: fixed;
     width: 100%;
+}
+
+#topo {
+    position: fixed;
     top: 0;
     z-index: 1;
     height: 10vh;
@@ -47,8 +74,6 @@ body,
 }
 
 #eng {
-    display: flex;
-    align-items: center;
     position: absolute;
     right: 1vw;
 }
@@ -57,7 +82,7 @@ body,
     margin-left: 1vw;
     padding: 2vh;
     line-height: 2vh;
-    color: #e4e9eb;
+    color: var(--cor1);
     transition: .2s ease-in-out;
 }
 
@@ -69,23 +94,21 @@ body,
 }
 
 #rodape {
-    background: rgba(22, 41, 58, 0.7);
-    backdrop-filter: blur(10px);
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
     position: relative;
     bottom: 0;
-    width: 100%;
     padding: 3vh 0 5vh 0;
 }
 
 .inf {
     display: flex;
     width: 20rem;
-    flex-flow: column;
     line-height: 160%;
 }
+
+/*Corpo do site*/
 
 #card {
     width: 75%;
@@ -95,10 +118,9 @@ body,
 }
 
 .card2 {
-    flex-flow: column;
     width: 25rem;
     height: 50vh;
-    background: rgba(28, 35, 40, 0.65);
+    background: #1c2328a6;
     backdrop-filter: blur(7px);
     padding: 3vh;
     text-align: justify;
@@ -113,6 +135,7 @@ body,
     filter: brightness(.9);
 }
 
+/*Novidades*/
 #amb {
     display: flex;
     flex-flow: row wrap;
@@ -123,14 +146,8 @@ body,
 .amb2 {
     width: 50%;
     height: 50vh;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: large;
     cursor: pointer;
-    background: rgba(89, 121, 148, 0.7);
     transition: .35s ease-in-out;
 }
 
@@ -170,6 +187,7 @@ body,
     padding: 7vh;
 }
 
+/*Contato-Formulário de contato*/
 #formulario,
 #opiniao,
 #nome {
@@ -204,18 +222,19 @@ body,
 #enviar:hover,
 #voltar:hover {
     background-color: #173145;
-    color: #e4e9eb;
+    color: var(--cor1);
     transition: .2s ease-out;
 }
 
+/*Comprar*/
 #conf {
-    background: #e4e9eb;
+    background: var(--cor1);
     width: 60%;
     height: 70vh;
     position: fixed;
     top: 20vh;
     display: none;
-    box-shadow: rgba(11, 23, 33, 0.5) 1px 3px 5px;
+    box-shadow: #0b172180 1px 3px 5px;
     box-shadow: rgb(0, 0, 0, .4) 1px 2px 4px;
     justify-content: center;
     align-items: center;
@@ -226,7 +245,6 @@ body,
 #confright {
     height: 100%;
     justify-content: center;
-    flex-flow: column;
     padding: 5vh;
 }
 
@@ -251,7 +269,7 @@ body,
     text-align: center;
     background: #38678b;
     border: none;
-    color: #e4e9eb;
+    color: var(--cor1);
     margin-top: 1vh;
     transition: .2s ease-out;
 }
@@ -277,6 +295,7 @@ body,
     width: 70%;
 }
 
+/*Apresentação*/
 #ap {
     background: url(img/Apresentação.png);
     height: 100%;
@@ -291,26 +310,19 @@ body,
 
 #pr {
     height: 215vh;
-    background-color: #e4e9eb;
+    background-color: var(--cor1);
     margin-top: 2vh;
     justify-content: space-between;
-    flex-flow: column;
 }
 
 #for {
     width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     justify-content: space-around;
     height: 10vh;
 }
 
 #for2 {
-    background-color: #e4e9eb;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
+    background-color: var(--cor1);
     margin-top: 2vh;
     justify-content: space-between;
 }
@@ -319,6 +331,22 @@ body,
     justify-content: space-between;
 }
 
+#resp2 {
+    background: url(img/Menu.png);
+    background-size: contain;
+    width: 4vh;
+    height: 4vh;
+    position: absolute;
+    right: 2vh;
+    top: 3vh;
+    display: none;
+}
+
+#resp {
+    display: none;
+}
+
+/*Dispositivos menores que 780px de largura*/
 @media (max-width:780px) {
     .texto {
         width: 100%;
@@ -326,6 +354,7 @@ body,
 
     .amb2 {
         width: 100%;
+        height: 35vh;
     }
 
     .bloco {
@@ -398,5 +427,27 @@ body,
     #ap {
         width: 100%;
         margin-bottom: 2vh;
+    }
+
+    .links {
+        display: none;
+    }
+
+    #eng {
+        flex-flow: column;
+        position: relative;
+        background: #16293a;
+        width: 100%;
+        top: 17vh;
+        border-bottom-left-radius: 2vh;
+        border-bottom-right-radius: 2vh;
+    }
+
+    #resp2 {
+        display: flex;
+    }
+
+    #resp:checked+#eng .links {
+        display: flex;
     }
 }
