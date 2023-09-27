@@ -1,8 +1,6 @@
 /*Contato-Formulário de contato*/
-var enviar = document.getElementById('enviar')
 function concluido() {
-    alert('Seu formulário foi enviado con sucesso')
-    enviar.style.display = 'none'
+    alert('Seu formulário foi enviado com sucesso')
 }
 
 /*Produtos-Sabores*/

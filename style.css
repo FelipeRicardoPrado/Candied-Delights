@@ -120,8 +120,7 @@ body,
 .card2 {
     width: 25rem;
     height: 50vh;
-    background: #1c2328a6;
-    backdrop-filter: blur(7px);
+    background: rgba(28, 35, 40, 0.5);
     padding: 3vh;
     text-align: justify;
     transition: .4s ease-in-out;
@@ -234,7 +233,6 @@ body,
     position: fixed;
     top: 20vh;
     display: none;
-    box-shadow: #0b172180 1px 3px 5px;
     box-shadow: rgb(0, 0, 0, .4) 1px 2px 4px;
     justify-content: center;
     align-items: center;
