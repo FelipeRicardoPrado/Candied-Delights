@@ -82,7 +82,18 @@ function compr() {
     valor = document.getElementById('valor')
     numero = document.getElementById('numero')
     numero = Number(numero.value)
-    valor.innerText = numero * 15 + ' R$'
+    var tamanho = document.getElementById('Tamanho').value
+    switch (tamanho) {
+        case 'Pequeno':
+            valor.innerText = numero * 7 * 1 + ' R$'
+            break;
+        case 'Médio':
+            valor.innerText = numero * 7 * 1.5 + ' R$'
+            break;
+        default:
+            valor.innerText = numero * 7 * 2 + ' R$'
+            break;
+    }
     if (numero > 0 && numero <= 500) {
         alert('Sua compra foi realizada com sucesso')
     } else {
