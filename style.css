@@ -448,4 +448,29 @@ body,
     #resp:checked+#eng .links {
         display: flex;
     }
+
+    .links:hover {
+        background: none;
+        transform: none;
+        box-shadow: none;
+        transition: none;
+    }
+
+    .card2:hover {
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        filter: none;
+    }
+
+    .amb2:hover {
+        box-shadow: none;
+        transition: none;
+    }
+
+    #amb:has(.amb2:hover) .amb2:not(:hover) {
+        filter: none;
+        transform: none;
+        transition: none;
+    }
 }
