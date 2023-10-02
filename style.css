@@ -29,7 +29,8 @@ body,
 #eng,
 .amb2,
 #for,
-#for2 {
+#for2,
+#sabp {
     display: flex;
     align-items: center;
 }
@@ -344,6 +345,46 @@ body,
     display: none;
 }
 
+.caixa>h2 {
+    font-size: 5vh;
+    font-weight: normal;
+}
+
+.card2>h3 {
+    font-size: 2vh;
+    font-weight: normal;
+    padding: 5vh;
+}
+
+#card>h2 {
+    font-size: 5vh;
+    font-weight: normal;
+    padding: 5vh;
+}
+
+.bloco2>h3 {
+    font-size: 3vh;
+    font-weight: normal;
+}
+
+#sabp {
+    justify-content: space-around;
+    flex-flow: wrap row;
+    width: 100%;
+    padding: 1vh;
+}
+
+#card>#sabp>.card2 {
+    cursor: pointer;
+    margin: 1.5vh;
+    height: 70vh;
+}
+
+#rodape>a>.logo {
+    width: 10vh;
+    margin-left: 0;
+}
+
 /*Dispositivos menores que 780px de largura*/
 @media (max-width:780px) {
     .texto {
@@ -472,5 +513,107 @@ body,
         filter: none;
         transform: none;
         transition: none;
+    }
+}
+
+@media (max-height:450px) {
+
+    .caixa>h2,
+    #card>h2 {
+        font-size: 10vh;
+    }
+
+    .card2>h3 {
+        font-size: 5vh;
+    }
+
+    .card2 {
+        width: 20rem;
+        height: 90vh;
+        padding: 5vh;
+    }
+
+    .bloco2>h3 {
+        font-size: 6vh;
+    }
+
+    .texto {
+        width: 80vw;
+        line-height: 7vh;
+    }
+
+    .amb2 {
+        height: 100vh;
+    }
+
+    #topo {
+        height: 20vh;
+    }
+
+    .logo {
+        width: 15vh;
+    }
+
+    #resp2 {
+        width: 10vh;
+        height: 10vh;
+        right: 4vh;
+        top: 5vh;
+    }
+
+    #eng {
+        position: absolute;
+        width: 40%;
+        top: 20vh;
+    }
+
+    #ap {
+        width: 50%;
+    }
+
+    .caixa {
+        height: 80vh;
+    }
+
+    .simbolo {
+        width: 10vh;
+    }
+
+    a.card2 {
+        width: 18rem;
+        height: 85vh;
+    }
+
+    #formulario,
+    #opiniao,
+    #nome {
+        width: 80%;
+        height: 20vh;
+    }
+
+    #opiniao {
+        height: 30vh;
+    }
+
+    #for2 {
+        height: 120vh;
+    }
+
+    #nome,
+    #formulario {
+        margin: 1vh;
+    }
+
+    #card>#sabp>.card2 {
+        height: 100vh;
+    }
+
+    #rodape {
+        justify-content: space-between;
+    }
+
+    #rodape>a>.logo {
+        width: 17vh;
+        margin-left: 2vh;
     }
 }
