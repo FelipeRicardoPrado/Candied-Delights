@@ -516,6 +516,7 @@ body,
     }
 }
 
+/*Dispositivos Deitado menores que 450px de altura*/
 @media (max-height:450px) {
 
     .caixa>h2,
@@ -538,8 +539,8 @@ body,
     }
 
     .texto {
-        width: 80vw;
-        line-height: 7vh;
+        width: 65vw;
+        line-height: 10vh;
     }
 
     .amb2 {
@@ -574,6 +575,8 @@ body,
 
     #ap {
         width: 50%;
+        margin-right: 2vw;
+        height: 80%;
     }
 
     .caixa {
@@ -628,5 +631,76 @@ body,
 
     .links {
         display: none;
+    }
+
+    .links:hover {
+        background: none;
+        transform: none;
+        box-shadow: none;
+        transition: none;
+    }
+
+    .card2:hover {
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        filter: none;
+    }
+
+    .amb2:hover {
+        box-shadow: none;
+        transition: none;
+    }
+
+    #amb:has(.amb2:hover) .amb2:not(:hover) {
+        filter: none;
+        transform: none;
+        transition: none;
+    }
+
+    .imgbl {
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .bloco {
+        height: 65vh;
+    }
+
+    .bloco2 {
+        padding: 7vh;
+    }
+
+    #pr {
+        height: auto;
+    }
+
+    #conf {
+        width: 95%;
+        top: 10vh;
+        height: 95vh;
+    }
+
+    #confleft,
+    #confright {
+        width: 100%;
+        justify-content: center;
+        flex-flow: column;
+        padding: 1.5vh;
+    }
+
+    #confleft {
+        width: 50vw;
+        background: #d0d4d6;
+    }
+
+    #confright {
+        width: 50vw;
+    }
+
+    .numero,
+    #numero {
+        font-size: 5vh;
+        height: 10vh;
     }
 }
