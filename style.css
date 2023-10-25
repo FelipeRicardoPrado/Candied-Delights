@@ -107,6 +107,7 @@ body,
     display: flex;
     width: 20rem;
     line-height: 160%;
+    color: var(--cor1);
 }
 
 /*Corpo do site*/
@@ -177,6 +178,7 @@ body,
 
 .dir {
     width: max-content;
+    color: var(--cor1);
 }
 
 .bloco {
@@ -386,6 +388,10 @@ body,
     margin-left: 0;
 }
 
+.inf>.tit {
+    color: hsl(208, 45%, 8%);
+}
+
 /*Dispositivos menores que 780px de largura*/
 @media (max-width:780px) {
     .texto {
@@ -514,6 +520,10 @@ body,
         filter: none;
         transform: none;
         transition: none;
+    }
+
+    .card2>h3 {
+        font-size: 2.45vh;
     }
 }
 
